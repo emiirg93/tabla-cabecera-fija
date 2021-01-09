@@ -1,0 +1,49 @@
+.first-row {
+  position: sticky;
+  top: 0;
+}
+
+.second-row {
+  position: sticky;
+  top: 33px;
+}
+
+thead th {
+  background: white;
+}
+
+.first-row:after,
+.first-row:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.first-row:before {
+  top: -1px;
+  border-top: 1px solid rgb(222,226,230);
+}
+
+.first-row:after {
+  bottom: -1px;
+  border-bottom: 1px solid rgb(222,226,230);
+}
+
+.second-row:after,
+.second-row:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.second-row:before {
+  top: -1px;
+  border-top: 1px solid rgb(222,226,230);
+}
+
+.second-row:after {
+  bottom: -1px;
+  border-bottom: 1px solid rgb(222,226,230);
+}
