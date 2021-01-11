@@ -5,7 +5,7 @@
 
 .second-row {
   position: sticky;
-  top: 33px;
+  top: 29px;
 }
 
 thead th {
@@ -22,12 +22,12 @@ thead th {
 
 .first-row:before {
   top: -1px;
-  border-top: 1px solid rgb(222,226,230);
+  border-top: 1px solid rgb(222, 226, 230);
 }
 
 .first-row:after {
   bottom: -1px;
-  border-bottom: 1px solid rgb(222,226,230);
+  border-bottom: 1px solid rgb(222, 226, 230);
 }
 
 .second-row:after,
@@ -40,10 +40,19 @@ thead th {
 
 .second-row:before {
   top: -1px;
-  border-top: 1px solid rgb(222,226,230);
+  border-top: 1px solid rgb(222, 226, 230);
 }
 
 .second-row:after {
   bottom: -1px;
-  border-bottom: 1px solid rgb(222,226,230);
+  border-bottom: 1px solid rgb(222, 226, 230);
+}
+
+.table{
+  margin-bottom: 0;
+}
+
+.table-container {
+  overflow: auto;
+  max-height: 800px;
 }

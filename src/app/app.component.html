@@ -1,82 +1,41 @@
 <div class="p-3 bg-dark mb-3">
-    <h4 class="text-white">navBar</h4>
+    <h4 class="text-white m-0">navBar</h4>
 </div>
 <div class="container">
-    <table class="table table-sm table-bordered">
-        <thead class="text-center">
-            <tr>
-                <th class="first-row" rowspan="1" colspan="2">Persona</th>
-                <th class="first-row" rowspan="1" colspan="2">Datos</th>
-                <th class="first-row" rowspan="2">Juego</th>
-            </tr>
-            <tr>
-                <th class="second-row">Nombre</th>
-                <th class="second-row">Apellido</th>
-                <th class="second-row">Dni</th>
-                <th class="second-row">Telefono</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr *ngFor="let item of data;let i = index">
-                <td>data {{i+1}}</td>
-                <td>data {{i+1}}</td>
-                <td>data {{i+1}}</td>
-                <td>data {{i+1}}</td>
-                <td>data {{i+1}}</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="table-container">
+        <table class="table table-sm table-bordered text-nowrap">
+            <thead class="text-center">
+                <tr>
+                    <th class="first-row" rowspan="1" colspan="2">Persona</th>
+                    <th class="first-row" rowspan="1" colspan="2">Datos</th>
+                    <th class="first-row" rowspan="2">Juego</th>
+                    <th class="first-row" rowspan="2">Equipo</th>
+                    <th class="first-row" rowspan="2">Rango</th>
+                    <th class="first-row" rowspan="2">Main</th>
+                </tr>
+                <tr>
+                    <th class="second-row">Nombre</th>
+                    <th class="second-row">Apellido</th>
+                    <th class="second-row">Dni</th>
+                    <th class="second-row">Telefono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of data;let i = index">
+                    <td>data {{i+1}} asdasdasdas</td>
+                    <td>data {{i+1}} adsasdadsad</td>
+                    <td>data {{i+1}} adasdasdasdadasd</td>
+                    <td>data {{i+1}} asdasdasdasdadsasdadasd</td>
+                    <td>data {{i+1}} asdasdasdasdadsasdad</td>
+                    <td>data {{i+1}} asdasdasdasdadsasdadasd</td>
+                    <td>data {{i+1}} asdasdasdasdadsasdadasd</td>
+                    <td>data {{i+1}} asdasdasdasdadsasdadasd</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
     <div class="mt-2 p-3">
 
     </div>
 </div>
-
-<!-- <div class="p-3 bg-dark mb-2">
-    <h4 class="text-white">navBar</h4>
-</div>
-
-<div class="container">
-    <cdk-virtual-scroll-viewport tvsItemSize [ngStyle]="{'height':height+'rem'}" class="mat-elevation-z2">
-        <table mat-table [dataSource]="dataSource" class="table table-sm table-bordered">
-
-            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
-            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-
-            <ng-container matColumnDef="persona">
-                <th mat-header-cell *matHeaderCellDef>Persona</th>
-                <td mat-cell *matCellDef="let element">asdasd</td>
-            </ng-container>
-
-            <ng-container matColumnDef="name">
-                <th mat-header-cell *matHeaderCellDef>Name</th>
-                <td mat-cell *matCellDef="let element">aasdasdas</td>
-            </ng-container>
-
-            <ng-container matColumnDef="caca">
-                <th mat-header-cell *matHeaderCellDef>caca</th>
-                <td mat-cell *matCellDef="let element">aasdasdasdasdasd</td>
-            </ng-container>
-
-            <ng-container matColumnDef="otra">
-                <th mat-header-cell *matHeaderCellDef>caca</th>
-                <td mat-cell *matCellDef="let element">aasdasdasdasdasdasdasddasdadasdasdasdasdasdasdasdadsadsasdsadadsdasdsadsadasasd</td>
-            </ng-container>
-
-            <ng-container matColumnDef="otras">
-                <th mat-header-cell *matHeaderCellDef>caca</th>
-                <td mat-cell *matCellDef="let element">aasdasdasdasdasdas</td>
-            </ng-container>
-
-            <ng-container matColumnDef="otro">
-                <th mat-header-cell *matHeaderCellDef>caca</th>
-                <td mat-cell *matCellDef="let element">aasdasdasdasdasda</td>
-            </ng-container>
-
-        </table>
-    </cdk-virtual-scroll-viewport>
-
-    <div class="text-center" *ngIf="data.length === 0">
-        <h5>no hay elementos</h5>
-    </div>
-</div> -->
